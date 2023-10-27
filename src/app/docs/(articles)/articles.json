@@ -1,0 +1,31 @@
+[
+  { 
+    "kind": "group",
+    "title": "Introduction",
+    "route": "introduction",
+    "articles": [
+      {
+        "kind": "article",
+        "title": "Getting Started",
+        "route": "getting-started"
+      },
+      {
+        "kind": "article",
+        "title": "Using Testing Library",
+        "route": "testing"
+      }
+    ]
+  },
+  {
+    "kind": "group",
+    "title": "Utils",
+    "route": "utils",
+    "articles": [
+      {
+        "kind": "article",
+        "title": "Getting Started",
+        "route": "gettingStarted"
+      }
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+.documentation {
+  display: flex;
+  height: 100%;
+  
+  .sideNavBar {
+    border-right: 2px solid black;
+    height: 100%;
+  }
+}

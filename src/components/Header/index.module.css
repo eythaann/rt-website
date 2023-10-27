@@ -1,0 +1,18 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: var(--config-header-height);
+  border-bottom: 1px solid var(--color-black);
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+
+  .nav > ul {
+    display: flex;
+    gap: 10%;
+  }
+}
+
