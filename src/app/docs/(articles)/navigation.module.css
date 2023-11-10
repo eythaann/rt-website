@@ -1,0 +1,8 @@
+.link {
+  border-left: 1px solid var(--color-gray-200);
+  padding: 5px 0 5px 20px;
+
+  &.active {
+    border-left: 2px solid var(--color-cyan-500);
+  }
+}

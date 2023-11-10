@@ -1,3 +1,4 @@
+import { HeaderRoute } from './route';
 import Link from 'next/link';
 
 import styles from './index.module.css';
@@ -5,24 +6,23 @@ import styles from './index.module.css';
 export const Header = () => {
   return <header role="banner" className={styles.header}>
     <h1>
-      <Link href="/">
+      <Link href="/" aria-label="Homepage">
         Readable Types
       </Link>
     </h1>
     <nav className={styles.nav} role="navigation" aria-label="Main navigation">
       <ul>
+        <HeaderRoute route="docs" label="Documentation Page"/>
+        <HeaderRoute route="blog" label="Blog Page"/>
         <li>
-          <Link href="/docs" /* aria-current={pathname === "/docs" ? "page" : undefined} */>
-            Docs
-          </Link>
-        </li>
-        <li>
-          <Link href="/blog" /* aria-current={pathname === "/blog" ? "page" : undefined} */>
-            Blog
-          </Link>
-        </li>
-        <li>
-          <a href="https://github.com/eythaann/readable-types" rel="noopener noreferrer" target="_blank">Github</a>
+          <a
+            href="https://github.com/eythaann/readable-types"
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label="Readable Types on GitHub"
+          >
+            Github
+          </a>
         </li>
       </ul>
     </nav>

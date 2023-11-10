@@ -13,6 +13,11 @@
         "kind": "article",
         "title": "Using Testing Library",
         "route": "testing"
+      },
+      {
+        "kind": "article",
+        "title": "Using High Order Types",
+        "route": "hkt"
       }
     ]
   },
@@ -23,8 +28,95 @@
     "articles": [
       {
         "kind": "article",
-        "title": "Getting Started",
-        "route": "gettingStarted"
+        "title": "Any",
+        "route": "any"
+      },
+      {
+        "kind": "article",
+        "title": "Arrays - Tuples",
+        "route": "arrays"
+      },
+      {
+        "kind": "article",
+        "title": "Booleans",
+        "route": "booleans"
+      },
+      {
+        "kind": "article",
+        "title": "Comparison",
+        "route": "comparison"
+      },
+      {
+        "kind": "article",
+        "title": "Conditions",
+        "route": "conditions"
+      },
+      {
+        "kind": "article",
+        "title": "Functions",
+        "route": "functions"
+      },
+      {
+        "kind": "article",
+        "title": "Generals",
+        "route": "generals"
+      },
+      {
+        "kind": "article",
+        "title": "Iterators",
+        "route": "iterators"
+      },
+      {
+        "kind": "article",
+        "title": "Never",
+        "route": "never"
+      },
+      {
+        "kind": "article",
+        "title": "Numbers",
+        "route": "numbers"
+      },
+      {
+        "kind": "article",
+        "title": "Objects",
+        "route": "objects"
+      },
+      {
+        "kind": "article",
+        "title": "Promises",
+        "route": "promises"
+      },
+      {
+        "kind": "article",
+        "title": "Strings",
+        "route": "strings"
+      },
+      {
+        "kind": "article",
+        "title": "Undefined",
+        "route": "undefined"
+      },
+      {
+        "kind": "article",
+        "title": "Unknow",
+        "route": "unknow"
+      }
+    ]
+  },
+  { 
+    "kind": "group",
+    "title": "Api Reference",
+    "route": "api",
+    "articles": [
+      {
+        "kind": "article",
+        "title": "Config with d.ts",
+        "route": "config"
+      },
+      {
+        "kind": "article",
+        "title": "Typescript Plugin",
+        "route": "plugin"
       }
     ]
   }

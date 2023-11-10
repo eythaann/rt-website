@@ -1,22 +1,23 @@
 import { PropsWithChildren } from 'react';
 
-import { Group } from './(articles)/Article';
+import { ArticleLinksGroup } from './(articles)/Article';
 import articles from './(articles)/articles.json';
 
 import styles from './layout.module.css';
 
 export default async ({ children }: PropsWithChildren) => {
-  return <div className={styles.documentation}>
-    <aside className={styles.sideNavBar}>
-      Readable Types
-      {
-        articles.map(({ articles, title, route }) => {
-          return <Group key={route} route={route} title={title} articles={articles} />;
-        })
-      }
+  return <>
+    <aside className={styles.sideNavBar} aria-label="Documentation sidebar">
+      <nav aria-label="Readable Types Documentation">
+        {
+          articles.map(({ articles, title, route }) => {
+            return <ArticleLinksGroup key={route} route={route} title={title} articles={articles} />;
+          })
+        }
+      </nav>
     </aside>
-    <main>
+    <main className={styles.content} aria-labelledby="main-content-heading">
       {children}
     </main>
-  </div>;
+  </>;
 };

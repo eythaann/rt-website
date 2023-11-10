@@ -1,4 +1,9 @@
+'use client';
+import { cx } from '../../../utils';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+
+import styles from './navigation.module.css';
 
 interface group {
   title: string;
@@ -9,29 +14,36 @@ interface group {
 interface article {
   title: string;
   route: string;
+  active: boolean;
 }
 
-export const Group = ({ title, route, articles }: group) => {
-  return <details>
-    <summary>{title}</summary>
-    <nav>
-      <ul>
-        {
-          articles.map((article) => {
-            return <Article
-              key={article.route}
-              route={route + '/' + article.route}
-              title={article.title}
-            />;
-          })
-        }
-      </ul>
-    </nav>
+export const ArticleLinksGroup = ({ title, route, articles }: group) => {
+  const detailsId = `details-${route.replace(/\//g, '-')}`;
+  const pathname = usePathname();
+
+  console.log(pathname);
+
+  return <details open={pathname.includes(route)}>
+    <summary aria-controls={detailsId}>{title}</summary>
+    <ul id={detailsId}>
+      {
+        articles.map((article) => {
+          return <LinkToArticle
+            active={pathname.includes(article.route)}
+            key={article.route}
+            route={route + '/' + article.route}
+            title={article.title}
+          />;
+        })
+      }
+    </ul>
   </details>;
 };
 
-export const Article = ({ title, route }: article) => {
-  return <li>
+export const LinkToArticle = ({ title, route, active }: article) => {
+  return <li className={cx(styles.link, {
+    [styles.active]: active,
+  })}>
     <Link href={`/docs/${route}`}>{title}</Link>
   </li>;
 };

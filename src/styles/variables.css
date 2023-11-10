@@ -22,13 +22,17 @@
   --color-yellow-300:	#f8d904;
   --color-yellow-400:	#e8c600;
 
+
+  --color-cyan-500: #33c5e8;
+  --color-cyan-600: #12b0da;
+
   /* font variables */
   --placeholder-font-color: var(--color-gray-400);
   --error-font-color: var(--color-red-800);
 
   /* config variables */
-  --config-border-radius: 4px;
-  --config-header-height: 40px;
+  --config-border-radius: 8px;
+  --config-header-height: 60px;
 }
 
 @media (prefers-color-scheme: dark) {

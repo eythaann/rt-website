@@ -64,7 +64,6 @@ svg {
 
 body {
   font-size: 100%;
-  height: 100vh;
   font-family: var(--main-typo);
   color: var(--primary-color);
   background-color: var(--secondary-color);
