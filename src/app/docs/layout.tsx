@@ -11,7 +11,7 @@ export default async ({ children }: PropsWithChildren) => {
       <nav aria-label="Readable Types Documentation">
         {
           articles.map(({ articles, title, route }) => {
-            return <ArticleLinksGroup key={route} route={route} title={title} articles={articles} />;
+            return <ArticleLinksGroup key={route} route={route} title={title} articles={articles as any} />;
           })
         }
       </nav>
