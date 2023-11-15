@@ -1,9 +1,12 @@
 version: '3.9'
 services:
   frontend-app:
-    container_name: production-rt-website
+    image: prod-rt-website-image
+    container_name: prod-rt-website-container
     build:
       context: ../../
       dockerfile: ./docker/prod/dockerfile
     ports:
       - 3000:3000
+    env_file:
+      - ../../.env
