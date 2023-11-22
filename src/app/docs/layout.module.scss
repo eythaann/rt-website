@@ -1,0 +1,14 @@
+@use '/src/styles/views.scss';
+
+.content {
+  min-height: 100vh;
+  grid-column: 2/4;
+
+  @include views.desktop {
+    grid-column: 3/4;
+  }
+}
+
+.content p {
+  text-align: justify;
+}

@@ -1,7 +1,7 @@
 import CodeBlock from '../../../../../components/CodeBlock';
 
 const example = `
-import { isString, If } from 'readable-types'
+import { isString } from 'readable-types'
 
 type A<T> = If<isString<T>, {
   then: number;

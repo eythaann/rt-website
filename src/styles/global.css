@@ -12,12 +12,19 @@
 
 body {
   display: grid;
-  grid-template-columns: 10% 200px 1fr 20%;
+  grid-template-columns: var(--config-content-margin) 220px 1fr var(--config-content-margin);
   gap: 20px;
 }
 
 body > * {
   grid-column: 2/4;
+}
+
+p > code {
+  color: var(--secondary-color);
+  background-color: var(--color-gray-600);
+  padding: 3px 10px 2px;
+  border-radius: var(--config-border-radius);
 }
 
 body > header, footer {

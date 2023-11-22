@@ -32,7 +32,13 @@
 
   /* config variables */
   --config-border-radius: 8px;
-  --config-header-height: 60px;
+  --config-header-height: 50px;
+  --config-content-margin: 5%;
+
+   /* z indexs */
+   --z-header: 1;
+   --z-docs-menu: 2;
+   --z-modal: 3;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -51,5 +57,15 @@
     --color-gray-900: #fdfdfd;
   
     --color-black: #ffffff;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  :root {
+    --config-header-height: 60px;
+    --config-content-margin: 10%;
+
+    --z-header: 2;
+    --z-docs-menu: 1;
   }
 }

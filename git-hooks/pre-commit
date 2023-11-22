@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo test commit
+
+if [ $? -ne 0 ]; then
+  echo "Linting failed, commit denied."
+  exit 1
+fi

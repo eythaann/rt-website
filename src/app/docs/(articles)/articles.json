@@ -122,6 +122,11 @@
         "kind": "article",
         "title": "Typescript Plugin",
         "route": "plugin"
+      },
+      {
+        "kind": "article",
+        "title": "Keywords | Globals Types",
+        "route": "keywords"
       }
     ]
   }

@@ -1,18 +1,18 @@
 .header {
   position: sticky;
   top: 0;
-  z-index: 5;
+  z-index: var(--z-header);
   height: var(--config-header-height);
   box-shadow: 0 0 10px 1px var(--color-gray-500);
   background-color: var(--color-white);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10%;
+  padding: 0 var(--config-content-margin);
 
   .nav>ul {
     display: flex;
-    gap: 10%;
+    gap: 10px;
 
     .li:hover {
       color: var(--color-cyan-600);
@@ -24,4 +24,9 @@
       }
     }
   }
+}
+
+.header > a {
+  font-size: 1.4em;
+  font-weight: 600;
 }

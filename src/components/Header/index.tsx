@@ -5,15 +5,13 @@ import styles from './index.module.css';
 
 export const Header = () => {
   return <header role="banner" className={styles.header}>
-    <h1>
-      <Link href="/" aria-label="Homepage">
-        Readable Types
-      </Link>
-    </h1>
+    <Link href="/" aria-label="Homepage">
+      Readable Types
+    </Link>
     <nav className={styles.nav} role="navigation" aria-label="Main navigation">
       <ul>
-        <HeaderRoute route="docs" label="Documentation Page"/>
-        <HeaderRoute route="blog" label="Blog Page"/>
+        <HeaderRoute route="docs" label="Documentation Page" />
+        <HeaderRoute route="blog" label="Blog Page" />
         <li>
           <a
             href="https://github.com/eythaann/readable-types"

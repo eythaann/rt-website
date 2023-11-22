@@ -3,7 +3,7 @@ import { cx } from '../../../utils';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-import styles from './navigation.module.css';
+import styles from './LinksGroup.module.scss';
 
 interface group {
   title: string;
@@ -21,9 +21,7 @@ export const ArticleLinksGroup = ({ title, route, articles }: group) => {
   const detailsId = `details-${route.replace(/\//g, '-')}`;
   const pathname = usePathname();
 
-  console.log(pathname);
-
-  return <details open={pathname.includes(route)}>
+  return <details open className={styles.group}>
     <summary aria-controls={detailsId}>{title}</summary>
     <ul id={detailsId}>
       {

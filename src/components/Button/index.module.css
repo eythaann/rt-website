@@ -1,0 +1,14 @@
+.button {
+  padding: 10px;
+  border-radius: var(--config-border-radius);
+
+  &.primary {
+    background-color: var(--color-black);
+    color: var(--secondary-color);
+  }
+
+  &.secondary {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-black);
+  }
+}
