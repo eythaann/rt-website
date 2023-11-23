@@ -1,8 +1,2 @@
 #!/bin/bash
-
 echo test prepush
-
-if [ $? -ne 0 ]; then
-  echo "Linting failed, commit denied."
-  exit 1
-fi

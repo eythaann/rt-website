@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo test commit
+LINT=true docker-compose -f ./docker/dev/docker-compose.yml up -d
 
 if [ $? -ne 0 ]; then
   echo "Linting failed, commit denied."

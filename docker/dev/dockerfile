@@ -3,3 +3,11 @@ FROM node:18
 EXPOSE 3000
 
 WORKDIR /app
+
+ARG LINT
+
+CMD if [ "$LINT" = "true" ]; then \
+      npm run lint; \
+    else \
+      npm run dev; \
+    fi
