@@ -3,13 +3,11 @@ services:
   frontend-app:
     image: dev-rt-website-image
     container_name: dev-rt-website-container
-    #stdin_open: true
-    #tty: true
     build:
       context: ../../
       dockerfile: ./docker/dev/dockerfile
-      args:
-        - LINT=${LINT:-false}
+    environment:
+      - CMD
     volumes:
       - ../../:/app
     ports:

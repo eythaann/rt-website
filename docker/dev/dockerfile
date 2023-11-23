@@ -4,10 +4,7 @@ EXPOSE 3000
 
 WORKDIR /app
 
-ARG LINT
+COPY ./docker/dev/entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
-CMD if [ "$LINT" = "true" ]; then \
-      npm run lint; \
-    else \
-      npm run dev; \
-    fi
+ENTRYPOINT ["/entrypoint.sh"]
