@@ -1,8 +1,9 @@
 #!/bin/bash
 
 CMD="npm run lint" docker-compose -f ./docker/dev/docker-compose.yml up
+exit_code=$(docker wait dev-rt-website-container)
 
-if [ $? -ne 0 ]; then
-  echo "Linting failed, commit denied."
+if [ "$exit_code" -ne 0 ]; then
+  echo "Lint failed, cancelled commit."
   exit 1
 fi

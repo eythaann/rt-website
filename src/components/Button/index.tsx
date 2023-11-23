@@ -1,15 +1,15 @@
-import { PropsWithChildren } from "react"
-import { cx } from "../../utils"
+import { PropsWithChildren } from 'react';
 
-import styles from './index.module.css'
+import { cx } from '../../utils';
+
+import styles from './index.module.css';
 
 interface Props extends PropsWithChildren {
-  type?: 'primary' | 'secondary'
+  type?: 'primary' | 'secondary';
 }
 
-export function Button ({ type = 'primary', children }: Props) {
-
+export function Button({ type = 'primary', children }: Props) {
   return <button className={cx(styles.button, styles[type])}>
     {children}
-  </button>
+  </button>;
 }

@@ -16,7 +16,6 @@ export default () => {
       </p>
       <br />
 
-
     </article>
     <article>
       <h2>Testing with Readable Tests Types</h2>
@@ -26,5 +25,5 @@ export default () => {
         robust and type-safe tests for your TypeScript code.
       </p>
     </article>
-  </>
+  </>;
 };
