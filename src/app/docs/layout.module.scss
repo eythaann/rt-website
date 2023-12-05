@@ -6,6 +6,7 @@
 
   @include views.desktop {
     grid-column: 3/4;
+    margin-right: var(--config-content-margin);
   }
 }
 

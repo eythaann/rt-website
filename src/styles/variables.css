@@ -16,6 +16,7 @@
   --color-black: #000000;
 
   --color-blue-100: #e0f2ff;
+  --color-blue-800: #147af3;
 
   --color-red-800: #ea3829;
 
@@ -41,7 +42,7 @@
    --z-modal: 3;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --color-white: #000000;
 
@@ -58,7 +59,7 @@
   
     --color-black: #ffffff;
   }
-}
+} */
 
 @media screen and (min-width: 1025px) {
   :root {

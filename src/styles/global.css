@@ -20,11 +20,16 @@ body > * {
   grid-column: 2/4;
 }
 
+p > a {
+  color: var(--color-blue-800)
+}
+
 p > code {
   color: var(--secondary-color);
-  background-color: var(--color-gray-600);
-  padding: 3px 10px 2px;
+  background-color: var(--color-gray-400);
+  padding: 3px 8px 2px;
   border-radius: var(--config-border-radius);
+  white-space: nowrap;
 }
 
 body > header, footer {
@@ -44,10 +49,21 @@ h2 {
   margin-bottom: 10px;
 }
 
+h3 {
+  font-size: 1em;
+  margin: 4px 0;
+  font-weight: 600;
+}
+
 main article {
   margin: 20px 0;
   padding-bottom: 20px;
   border-bottom: 1px solid var(--color-gray-200);
+}
+
+article img {
+  border-radius: var(--config-border-radius);
+  margin: 10px 0;
 }
 
 @media (prefers-contrast: high) {

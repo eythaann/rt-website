@@ -5,9 +5,10 @@
     position: absolute;
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
+    background-color: var(--primary-color);
     padding: 10px;
-    right: 3px;
-    top: 3px;
+    right: 12px;
+    top: 12px;
     border-radius: var(--config-border-radius);
     cursor: pointer;
   }
@@ -17,7 +18,8 @@
   display: block;
   margin: 10px 0;
   border-radius: var(--config-border-radius);
-  padding: 10px;
+  padding: 20px;
   color: var(--secondary-color);
   background-color: var(--primary-color);
+  overflow-x: scroll;
 }

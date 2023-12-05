@@ -13,11 +13,28 @@
         "kind": "article",
         "title": "Using Testing Library",
         "route": "testing"
+      }
+    ]
+  },
+  { 
+    "kind": "group",
+    "title": "Language Features",
+    "route": "features",
+    "articles": [
+      {
+        "kind": "article",
+        "title": "Opaque Types",
+        "route": "opaque"
       },
       {
         "kind": "article",
-        "title": "Using High Order Types",
+        "title": "High Order Types",
         "route": "hkt"
+      },
+      {
+        "kind": "article",
+        "title": "Optics",
+        "route": "optics"
       }
     ]
   },

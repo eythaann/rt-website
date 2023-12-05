@@ -4,7 +4,7 @@ import hljs from 'highlight.js';
 import styles from './index.module.css';
 
 interface Props {
-  language?: 'typescript' | 'bash';
+  language?: 'typescript' | 'bash' | 'json';
   code: string;
 }
 
