@@ -1,5 +1,6 @@
 .codeContainer {
   position: relative;
+  margin: 10px 0;
 
   .copy {
     position: absolute;
@@ -12,14 +13,14 @@
     border-radius: var(--config-border-radius);
     cursor: pointer;
   }
-}
 
-.codeContainer code {
-  display: block;
-  margin: 10px 0;
-  border-radius: var(--config-border-radius);
-  padding: 20px;
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
-  overflow-x: scroll;
+  code {
+    display: block;
+    border-radius: var(--config-border-radius);
+    padding: 20px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    overflow-x: scroll;
+  }
+
 }

@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 
-import styles from './index.module.css';
+import styles from './index.module.scss';
 
 export default ({ text }: { text: string }) => {
   const [isCopied, setIsCopied] = useState(false);

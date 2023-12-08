@@ -37,7 +37,7 @@ const plugin = `
   "compilerOptions": {
     // ... other tsconfig settings
     "plugins": [{
-      "name": "readable-types-plugin",
+      "name": "readable-types",
     }]
   }
 }`;
@@ -53,8 +53,8 @@ export default () => {
     <br/>
 
     <h3>Integration with Jest</h3>
-    <p>If you're using Jest, include the following import in your test files:</p>
-    <CodeBlock code={'import \'readable-types/readable-test-types\';'} />
+    <p>If you're using Jest, include the following import in your test files or into your global jest file:</p>
+    <CodeBlock code={'import \'readable-test-for-types\';'} />
     <p>This allows you to use Jest without any compatibility issues. Note that there is no direct integration with Jest, so after running Jest commands, you should also execute <code>rtt</code> to run type tests.</p>
     <br/>
 

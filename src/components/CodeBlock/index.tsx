@@ -1,7 +1,7 @@
 import CopyButton from './CopyButton';
 import hljs from 'highlight.js';
 
-import styles from './index.module.css';
+import styles from './index.module.scss';
 
 interface Props {
   language?: 'typescript' | 'bash' | 'json';
@@ -14,7 +14,9 @@ export default ({ language = 'typescript', code }: Props) => {
 
   return <pre className={styles.codeContainer}>
     <CopyButton text={formatedCode}/>
-    <code dangerouslySetInnerHTML={{ __html: highlightedCode }}/>
+    <div className={styles.scroll}>
+      <code dangerouslySetInnerHTML={{ __html: highlightedCode }}/>
+    </div>
   </pre>;
 };
 

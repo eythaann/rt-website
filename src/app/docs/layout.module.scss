@@ -3,10 +3,12 @@
 .content {
   min-height: 100vh;
   grid-column: 2/4;
+  width: 100%;
+  overflow: scroll;
 
   @include views.desktop {
     grid-column: 3/4;
-    margin-right: var(--config-content-margin);
+    padding-right: var(--config-content-margin);
   }
 }
 
