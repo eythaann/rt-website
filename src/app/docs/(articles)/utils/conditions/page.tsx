@@ -17,7 +17,7 @@ export default () => {
       'hkt',
       'math',
       'numbers',
-      'utils',
+      'utils-description',
     ]} />
   </article>;
 };

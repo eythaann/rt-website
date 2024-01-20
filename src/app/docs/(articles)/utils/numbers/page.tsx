@@ -1,3 +1,4 @@
+import { ArticleRecommendations } from '../../../../../components/Recomendations';
 import { UtilArticle } from '../../../../../components/UtilArticle';
 import { eIsNumber, eStrToNumber } from './examples';
 
@@ -14,5 +15,14 @@ export default () => {
       Converts a string representation of a number to a number type.
       If the input isn't a string representation of a number, the result is `never`.
     </UtilArticle>
+
+    <ArticleRecommendations links={[
+      'strings',
+      'objects',
+      'arrays',
+      'hkt',
+      'generals',
+      'utils-description',
+    ]} />
   </article>;
 };

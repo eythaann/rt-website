@@ -69,7 +69,7 @@ export default () => {
     <ArticleRecommendations links={[
       'config',
       'plugin',
-      'utils',
+      'utils-description',
       'hkt',
       'docs',
       'getting-started',

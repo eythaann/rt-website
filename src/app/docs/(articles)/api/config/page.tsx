@@ -41,7 +41,7 @@ export default () => {
       'getting-started',
       'testing',
       'plugin',
-      'utils',
+      'utils-description',
       'hkt',
       'docs',
     ]} />

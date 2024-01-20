@@ -45,7 +45,7 @@ export default () => {
       'arrays',
       'hkt',
       'generals',
-      'utils',
+      'utils-description',
     ]} />
   </article>;
 };

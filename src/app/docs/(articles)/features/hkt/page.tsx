@@ -78,7 +78,7 @@ export default () => {
     </section>
 
     <ArticleRecommendations links={[
-      'utils',
+      'utils-description',
       'iterators',
       'math',
       'unknown',

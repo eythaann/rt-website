@@ -26,7 +26,7 @@ export default () => {
       'testing',
       'config',
       'plugin',
-      'utils',
+      'utils-description',
       'hkt',
     ]} />
   </>;

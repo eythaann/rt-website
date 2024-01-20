@@ -24,7 +24,7 @@ export default () => {
       'getting-started',
       'testing',
       'config',
-      'utils',
+      'utils-description',
       'hkt',
       'docs',
     ]}/>
