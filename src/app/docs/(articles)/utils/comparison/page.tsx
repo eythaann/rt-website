@@ -1,14 +1,24 @@
+
 import { ArticleRecommendations } from '../../../../../components/Recomendations';
 import { UtilArticle } from '../../../../../components/UtilArticle';
-import { eIsNever } from './examples';
+import { eEquals, eIsSubtype, eIsSupertype } from './examples';
 
 export default () => {
   return <article>
-    <h1>'Never' Type Evaluation Utility</h1>
-    <p>A TypeScript utility to evaluate if a specified type is exactly the 'never' type.</p>
+    <h1>Type Comparison - Utils</h1>
+    <p>Utilities for comparing types in TypeScript.</p>
+    <hr />
 
-    <UtilArticle name="isNever" example={eIsNever}>
-      Evaluates if the specified type is exactly a 'never' type. Useful for understanding and debugging complex type interactions in TypeScript, especially in cases involving unions and conditional types.
+    <UtilArticle name="equals" example={eEquals}>
+      Determines if two types are equal.
+    </UtilArticle>
+
+    <UtilArticle name="isSupertype" example={eIsSupertype}>
+      Determines if type A is a supertype of type B.
+    </UtilArticle>
+
+    <UtilArticle name="isSubtype" example={eIsSubtype}>
+      Determines if type A is a subtype of type B.
     </UtilArticle>
 
     <ArticleRecommendations links={[

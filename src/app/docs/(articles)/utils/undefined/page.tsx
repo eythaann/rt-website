@@ -7,6 +7,7 @@ export default () => {
   return <article>
     <h1>Type Utilities - Handling Null and Undefined</h1>
     <p>Utilities for handling and transforming null and undefined types in TypeScript</p>
+    <hr />
 
     <UtilArticle name="isUndefined" example={eIsUndefined}>
       Evaluates if the specified type is `undefined`. Returns true only for undefined type.

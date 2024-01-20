@@ -1,14 +1,19 @@
 import { ArticleRecommendations } from '../../../../../components/Recomendations';
 import { UtilArticle } from '../../../../../components/UtilArticle';
-import { eIsNever } from './examples';
+import { eDefaultOnAny, eIsAny } from './examples';
 
 export default () => {
   return <article>
-    <h1>'Never' Type Evaluation Utility</h1>
-    <p>A TypeScript utility to evaluate if a specified type is exactly the 'never' type.</p>
+    <h1>Any Type - Utils</h1>
+    <p>Utilities for handling the `any` type in TypeScript.</p>
+    <hr />
 
-    <UtilArticle name="isNever" example={eIsNever}>
-      Evaluates if the specified type is exactly a 'never' type. Useful for understanding and debugging complex type interactions in TypeScript, especially in cases involving unions and conditional types.
+    <UtilArticle name="isAny" example={eIsAny}>
+      Evaluates if the specified type is `any`.
+    </UtilArticle>
+
+    <UtilArticle name="defaultOnAny" example={eDefaultOnAny}>
+      A utility type that substitutes a default type when the provided type is `any`.
     </UtilArticle>
 
     <ArticleRecommendations links={[

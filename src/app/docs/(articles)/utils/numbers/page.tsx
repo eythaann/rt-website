@@ -6,6 +6,7 @@ export default () => {
   return <article>
     <h1>Number & Number Literals - Utils</h1>
     <p>Utils for manipulate or validate number types</p>
+    <hr />
 
     <UtilArticle name="isNumber" example={eIsNumber}>
       Evaluates if the specified type is a string, any other type returns false.

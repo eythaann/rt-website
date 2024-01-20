@@ -19,6 +19,12 @@ type A = modify<{ a: string }, { b: number }>;
 //   ^? { a: string; b: number }
 `;
 
+export const eModifyInterface = `
+interface A { a: this['b']; b: string; }
+type C = modify<A, { b: number }>; 
+//   ^? { a: number; b: number }
+`;
+
 export const eModifyByKey = '// TODO';
 
 export const ePrettify = 'type A = prettify<{ a: string }>; // Result: { a: string }';
@@ -80,4 +86,9 @@ type A = someToPartial<{ a: 'a', b: 'b' }, 'a'>;
 export const eSomeToRequired = `
 type A = someToRequired<{ a?: 'a', b?: 'b' }, 'a'>;
 //   ^? { a: 'a', b?: 'b' }
+`;
+
+export const eTupleToObject = `
+type a = TupleToObject<[string, number]>
+//   ^? { 0: string; 1: number; }
 `;

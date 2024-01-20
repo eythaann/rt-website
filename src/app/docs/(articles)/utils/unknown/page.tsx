@@ -6,6 +6,7 @@ export default () => {
   return <article>
     <h1>Type Utilities - Handling Unknown Types</h1>
     <p>Utilities for handling and transforming 'unknown' types in TypeScript</p>
+    <hr />
 
     <UtilArticle name="isUnknown" example={eIsUnknown}>
       Evaluates if the specified type is \`unknown\`. Returns true only for unknown type.

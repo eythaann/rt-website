@@ -11,9 +11,9 @@ export const ArticleRecommendations = ({ links }: Props) => {
   return <nav className={styles.container}>
     <ul>
       {
-        links.map((route) => {
+        links.map((route, index) => {
           const link = RecommendedLinksObj[route];
-          return <li>
+          return <li key={index}>
             <Link href={link.route} className={styles.box}>
               <span className={styles.title}>{link.title}</span>
               <span className={styles.description}>{link.description}</span>

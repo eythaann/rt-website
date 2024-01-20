@@ -1,8 +1,10 @@
-export const eIsNever = `
-type A = isNever<never>;
+export const eIsFunction = `
+type A = isFunction<() => void>;
 //   ^? true
-type B = isNever<string>;
+
+type B = isFunction<string>;
 //   ^? false
-type C = isNever<number | never>;
-//   ^? false
+
+type C = isFunction<() => void | never>;
+//   ^? true
 `;

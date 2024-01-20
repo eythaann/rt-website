@@ -6,6 +6,7 @@ export default () => {
   return <article>
     <h1>Numeric Operations as Type Utilities</h1>
     <p>TypeScript utilities for performing basic arithmetic operations as type transformations.</p>
+    <hr />
 
     <UtilArticle name="add" example={eAdd}>
       Takes two numeric literal types and produces their sum as a number literal type.

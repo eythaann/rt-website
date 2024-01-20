@@ -1,14 +1,17 @@
+
 import { ArticleRecommendations } from '../../../../../components/Recomendations';
 import { UtilArticle } from '../../../../../components/UtilArticle';
-import { eIsNever } from './examples';
+import { eIf } from './examples';
 
 export default () => {
   return <article>
-    <h1>'Never' Type Evaluation Utility</h1>
-    <p>A TypeScript utility to evaluate if a specified type is exactly the 'never' type.</p>
+    <h1>Conditional Types - Utils</h1>
+    <p>Utilities for creating conditional types in TypeScript.</p>
+    <hr />
 
-    <UtilArticle name="isNever" example={eIsNever}>
-      Evaluates if the specified type is exactly a 'never' type. Useful for understanding and debugging complex type interactions in TypeScript, especially in cases involving unions and conditional types.
+    <UtilArticle name="$if" example={eIf}>
+      Conditional type that selects one of two possible types based on a boolean condition or a condition object.
+      The way as you declare condition can be changed in your rt.config.ts file
     </UtilArticle>
 
     <ArticleRecommendations links={[

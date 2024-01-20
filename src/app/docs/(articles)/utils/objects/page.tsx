@@ -11,18 +11,21 @@ import {
   eIsStrictObject,
   eModify,
   eModifyByKey,
+  eModifyInterface,
   ePickByValue,
   ePrettify,
   eSomeToPartial,
   eSomeToReadonly,
   eSomeToRequired,
   eSomeToWritable,
+  eTupleToObject,
 } from './examples';
 
 export default () => {
   return <article>
     <h1>Object Type Utilities</h1>
     <p>Utilities for manipulating and evaluating object types in TypeScript</p>
+    <hr />
 
     <UtilArticle name="isObject" example={eIsObject}>
       Evaluates if the specified type is an object, array, or function.
@@ -34,6 +37,10 @@ export default () => {
 
     <UtilArticle name="modify" example={eModify}>
       Allows modifying interfaces or object types without the restrictions of using extends or & operator.
+    </UtilArticle>
+
+    <UtilArticle name="modifyInterface" example={eModifyInterface}>
+      Same as `modify` but less pretty and preserving the context of `this`.
     </UtilArticle>
 
     <UtilArticle name="modifyByKey" example={eModifyByKey}>
@@ -49,7 +56,7 @@ export default () => {
     </UtilArticle>
 
     <UtilArticle name="canBeEmptyObject" example={eCanBeEmptyObject}>
-      Evaluates if the object can be an empty object (`{}`).
+      Evaluates if the object can be an empty object (`{ }`).
     </UtilArticle>
 
     <UtilArticle name="getReadonlyKeys" example={eGetReadonlyKeys}>
@@ -86,6 +93,10 @@ export default () => {
 
     <UtilArticle name="someToRequired" example={eSomeToRequired}>
       Makes specific properties of an object required.
+    </UtilArticle>
+
+    <UtilArticle name="TupleToObject" example={eTupleToObject}>
+      Converts a tuple to an object.
     </UtilArticle>
 
     <ArticleRecommendations links={[

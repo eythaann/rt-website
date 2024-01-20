@@ -1,8 +1,15 @@
-export const eIsNever = `
-type A = isNever<never>;
+export const eIsAny = `
+type A = isAny<any>;
 //   ^? true
-type B = isNever<string>;
+type B = isAny<string>;
 //   ^? false
-type C = isNever<number | never>;
-//   ^? false
+type C = isAny<number | any>;
+//   ^? true
+`;
+
+export const eDefaultOnAny = `
+type A = defaultOnAny<any, string>;
+//   ^? string
+type B = defaultOnAny<number, string>;
+//   ^? number
 `;

@@ -1,5 +1,5 @@
 [
-  { 
+  {
     "kind": "group",
     "title": "Introduction",
     "route": "introduction",
@@ -22,7 +22,7 @@
       }
     ]
   },
-  { 
+  {
     "kind": "group",
     "title": "Language Features",
     "route": "features",
@@ -81,6 +81,16 @@
       },
       {
         "kind": "article",
+        "title": "New Types",
+        "route": "newtypes"
+      },
+      {
+        "kind": "article",
+        "title": "HKT utils",
+        "route": "HKT"
+      },
+      {
+        "kind": "article",
         "title": "Iterators",
         "route": "iterators"
       },
@@ -126,7 +136,7 @@
       }
     ]
   },
-  { 
+  {
     "kind": "group",
     "title": "Api Reference",
     "route": "api",

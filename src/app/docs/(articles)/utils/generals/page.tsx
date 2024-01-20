@@ -1,16 +1,48 @@
 import { ArticleRecommendations } from '../../../../../components/Recomendations';
 import { UtilArticle } from '../../../../../components/UtilArticle';
-import { eIsNever } from './examples';
+import {
+  eCast,
+  eDefaultOnNullable,
+  eKeyof,
+  eNoInfer,
+  eUnionToIntersection,
+  eValueof,
+  eWaitFor,
+} from './examples';
 
 export default () => {
   return <article>
-    <h1>'Never' Type Evaluation Utility</h1>
-    <p>A TypeScript utility to evaluate if a specified type is exactly the 'never' type.</p>
+    <h1>Advanced Type Utilities - Utils</h1>
+    <p>Advanced utilities for type manipulation in TypeScript.</p>
+    <hr />
 
-    <UtilArticle name="isNever" example={eIsNever}>
-      Evaluates if the specified type is exactly a 'never' type. Useful for understanding and debugging complex type interactions in TypeScript, especially in cases involving unions and conditional types.
+    <UtilArticle name="valueof" example={eValueof}>
+      Extracts the types of the values of the properties of T.
     </UtilArticle>
 
+    <UtilArticle name="keyof" example={eKeyof}>
+      Improved `keyof` to support unions.
+    </UtilArticle>
+
+    <UtilArticle name="unionToIntersection" example={eUnionToIntersection}>
+      Converts a union of object types into a single object type with keys being the union of all keys and values being the union of all values.
+    </UtilArticle>
+
+    <UtilArticle name="cast" example={eCast}>
+      This can be used to assert that a certain type T is a subtype of another type U.
+    </UtilArticle>
+
+    <UtilArticle name="noInfer" example={eNoInfer}>
+      Allows avoiding inference on generics when you predetermine a type in another context.
+    </UtilArticle>
+
+    <UtilArticle name="waitFor" example={eWaitFor}>
+      Avoids execution of caching when creating an interface or type.
+    </UtilArticle>
+
+    <UtilArticle name="defaultOnNullable" example={eDefaultOnNullable}>
+      A utility type that substitutes a default type when the provided type is `unknown`, `undefined`, or `null`.
+    </UtilArticle>
     <ArticleRecommendations links={[
       'conditions',
       'iterators',
