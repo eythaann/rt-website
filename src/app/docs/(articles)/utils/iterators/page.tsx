@@ -12,12 +12,12 @@ export default () => {
     </UtilArticle>
 
     <ArticleRecommendations links={[
-      'any',
-      'unknown',
+      'arrays',
+      'conditions',
       'comparison',
       'hkt',
       'generals',
-      'objects',
+      'utils',
     ]} />
   </article>;
 };

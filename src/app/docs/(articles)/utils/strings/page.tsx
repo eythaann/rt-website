@@ -1,10 +1,12 @@
+import { ArticleRecommendations } from '../../../../../components/Recomendations';
 import { UtilArticle } from '../../../../../components/UtilArticle';
 import { eIsString, eJoin, eSplit, eSplitReverse, eStartsWith, eStringtify } from './examples';
 
 export default () => {
-  return <>
+  return <article>
     <h1>String & String Literals - Utils</h1>
     <p>Utils for manipulate or validate string types</p>
+    <hr/>
 
     <UtilArticle name="isString" example={eIsString}>
       Evaluates if the specified type is a string, any other type returns false.
@@ -36,5 +38,14 @@ export default () => {
     <UtilArticle name="startsWith" example={eStartsWith}>
       Determines if a string type `T` starts with another string type `S`.
     </UtilArticle>
-  </>;
+
+    <ArticleRecommendations links={[
+      'numbers',
+      'objects',
+      'arrays',
+      'hkt',
+      'generals',
+      'utils',
+    ]} />
+  </article>;
 };

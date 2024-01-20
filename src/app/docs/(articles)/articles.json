@@ -29,18 +29,13 @@
     "articles": [
       {
         "kind": "article",
-        "title": "Opaque Types",
-        "route": "opaque"
-      },
-      {
-        "kind": "article",
         "title": "High Order Types",
         "route": "hkt"
       },
       {
         "kind": "article",
-        "title": "Optics",
-        "route": "optics"
+        "title": "Utils",
+        "route": "utils"
       }
     ]
   },

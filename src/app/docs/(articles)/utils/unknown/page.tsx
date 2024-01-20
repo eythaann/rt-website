@@ -1,8 +1,9 @@
+import { ArticleRecommendations } from '../../../../../components/Recomendations';
 import { UtilArticle } from '../../../../../components/UtilArticle';
 import { eDefaultOnUnknown, eIsUnknown } from './examples';
 
 export default () => {
-  return <>
+  return <article>
     <h1>Type Utilities - Handling Unknown Types</h1>
     <p>Utilities for handling and transforming 'unknown' types in TypeScript</p>
 
@@ -13,5 +14,14 @@ export default () => {
     <UtilArticle name="defaultOnUnknown" example={eDefaultOnUnknown}>
       Substitutes a default type when the provided type is unknown.
     </UtilArticle>
-  </>;
+
+    <ArticleRecommendations links={[
+      'any',
+      'never',
+      'undefined',
+      'hkt',
+      'generals',
+      'objects',
+    ]} />
+  </article>;
 };

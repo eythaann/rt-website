@@ -16,7 +16,19 @@
   --color-black: #000000;
 
   --color-blue-100: #e0f2ff;
+  --color-blue-200: #cae8ff;
+  --color-blue-300: #b5deff;
+  --color-blue-400: #96cefd;
+  --color-blue-500: #78bbfa;
+  --color-blue-600: #59a7f6;
+  --color-blue-700: #3892f3;
   --color-blue-800: #147af3;
+  --color-blue-900: #0265dc;
+  --color-blue-1000: #0054b6;
+  --color-blue-1100: #004491;
+  --color-blue-1200: #003571;
+  --color-blue-1300: #002754;
+
 
   --color-red-800: #ea3829;
   --color-red-900: #d31510;

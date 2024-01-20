@@ -1,3 +1,4 @@
+import { ArticleRecommendations } from '../../../../../components/Recomendations';
 import { UtilArticle } from '../../../../../components/UtilArticle';
 import {
   eCanBeEmptyObject,
@@ -19,7 +20,7 @@ import {
 } from './examples';
 
 export default () => {
-  return <>
+  return <article>
     <h1>Object Type Utilities</h1>
     <p>Utilities for manipulating and evaluating object types in TypeScript</p>
 
@@ -86,5 +87,14 @@ export default () => {
     <UtilArticle name="someToRequired" example={eSomeToRequired}>
       Makes specific properties of an object required.
     </UtilArticle>
-  </>;
+
+    <ArticleRecommendations links={[
+      'numbers',
+      'promises',
+      'arrays',
+      'hkt',
+      'generals',
+      'utils',
+    ]} />
+  </article>;
 };

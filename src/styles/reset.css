@@ -50,6 +50,9 @@ h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, em, pre {
 
 h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 1em;
+  > code {
+    white-space: nowrap;
+  }
 }
 
 form, input, textarea, select, button, label {
@@ -86,7 +89,7 @@ body {
 
 hr {
   border: 1px solid;
-  margin: 0.7em 0;
+  margin: 1em 0;
   opacity: 0.8;
-  color: var(--primary-color);
+  color: var(--color-gray-200);
 }

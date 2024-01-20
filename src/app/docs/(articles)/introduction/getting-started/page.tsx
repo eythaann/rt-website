@@ -1,4 +1,5 @@
 import CodeBlock from '../../../../../components/CodeBlock';
+import { ArticleRecommendations } from '../../../../../components/Recomendations';
 import Link from 'next/link';
 
 const example = `
@@ -16,6 +17,7 @@ export default () => {
   return <article>
     <h1>Getting Started with Readable Types</h1>
     <p>Welcome to Readable Types, a TypeScript utility library that makes type manipulations and computations more intuitive and easier to read. Follow the instructions below to get started.</p>
+    <hr/>
 
     <section>
       <h2>Installation</h2>
@@ -59,5 +61,14 @@ export default () => {
         This guide will introduce you to the basics of type testing and show you how to integrate these tests into your development workflow.
       </p>
     </section>
+
+    <ArticleRecommendations links={[
+      'testing',
+      'config',
+      'plugin',
+      'utils',
+      'hkt',
+      'docs',
+    ]}/>
   </article>;
 };

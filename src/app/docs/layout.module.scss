@@ -7,7 +7,7 @@
   margin: 40px 0 12rem;
 
   @include views.desktop {
-    padding-right: 5vw;
+    padding-right: calc(var(--config-content-margin) * 2);
   }
 
   p {

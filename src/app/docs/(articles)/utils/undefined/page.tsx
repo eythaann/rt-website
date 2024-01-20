@@ -1,9 +1,10 @@
 
+import { ArticleRecommendations } from '../../../../../components/Recomendations';
 import { UtilArticle } from '../../../../../components/UtilArticle';
 import { eDefaultOnUndefined, eIsNull, eIsUndefined, eNonNull, eNonUndefined } from './examples';
 
 export default () => {
-  return <>
+  return <article>
     <h1>Type Utilities - Handling Null and Undefined</h1>
     <p>Utilities for handling and transforming null and undefined types in TypeScript</p>
 
@@ -26,5 +27,14 @@ export default () => {
     <UtilArticle name="defaultOnUndefined" example={eDefaultOnUndefined}>
       Substitutes a default type when the provided type is undefined.
     </UtilArticle>
-  </>;
+
+    <ArticleRecommendations links={[
+      'any',
+      'never',
+      'unknown',
+      'hkt',
+      'generals',
+      'objects',
+    ]} />
+  </article>;
 };
