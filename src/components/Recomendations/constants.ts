@@ -12,7 +12,7 @@ const getUtilLink = (util: string) => ({
   route: `/docs/utils/${util}`,
 });
 
-const _links = [
+const _links: PromotionLink[] = [
   {
     title: 'What is Readable-Types',
     description: 'Know more about the library.',
@@ -51,7 +51,7 @@ const _links = [
 
   //utils
   ...articles.find((group) => group.route === 'utils')!.articles.map((article) => getUtilLink(article.route)),
-] as const satisfies PromotionLink[];
+];
 
 export const RecommendedLinksObj = _links.reduce((obj, link) => {
   obj[link.route.split('/').at(-1)!] = link;
