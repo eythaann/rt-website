@@ -1,6 +1,5 @@
 import CodeBlock from '../../../../../components/CodeBlock';
 import { ArticleRecommendations } from '../../../../../components/Recomendations';
-import Image from 'next/image';
 
 const example = `
 import { defaultOnUnknown, isUnknown } from './infrastructure';
@@ -70,7 +69,7 @@ export default () => {
       <CodeBlock code={example} />
       <p>Note that using an array or a callback function are both valid for tests. In the case of Jest, you should add <code>assertType</code> alongside your other normal value assertions.</p>
       <h3>Output example of run rtft</h3>
-      <Image src="/testExample.png" alt="Example of running type testing on console with rtft." />
+      <img src="../../../../testExample.png" alt="Example of running type testing on console with rtft." />
     </section>
 
     <ArticleRecommendations links={[
