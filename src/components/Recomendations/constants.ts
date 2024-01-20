@@ -41,7 +41,7 @@ const _links = [
   {
     title: 'Using utils',
     description: 'Start using a exautive tested library for make your types.',
-    route: '/docs/features/utils',
+    route: '/docs/features/utils-description',
   },
   {
     title: 'High Order Types',
