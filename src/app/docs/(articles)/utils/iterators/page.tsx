@@ -2,6 +2,12 @@ import { ArticleRecommendations } from '../../../../../components/Recomendations
 import { UtilArticle } from '../../../../../components/UtilArticle';
 import { eTupleFind, eTupleMap, eTupleReduce, eUnionMap } from './examples';
 
+export const metadata = {
+  title: 'Readable Types - Tuple & Union Utilities',
+  description: 'Explore utility types for manipulating tuples and union types in TypeScript with Readable Types. Learn about functions like `TupleMap`, `TupleReduce`, `TupleFind`, and `UnionMap` to streamline your tuple and union-related type manipulations.',
+  keywords: 'Readable Types, TypeScript, tuple utilities, union utilities, TupleMap, TupleReduce, TupleFind, UnionMap',
+};
+
 export default () => {
   return <article>
     <h1>Tuple & Union Utilities</h1>

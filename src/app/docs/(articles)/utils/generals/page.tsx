@@ -10,6 +10,12 @@ import {
   eWaitFor,
 } from './examples';
 
+export const metadata = {
+  title: 'Readable Types - Advanced Type Utilities',
+  description: 'Explore advanced utilities for type manipulation in TypeScript with Readable Types. Learn about functions like `valueof`, `keyof`, `unionToIntersection`, `cast`, `noInfer`, `waitFor`, and `defaultOnNullable` to enhance your type manipulations.',
+  keywords: 'Readable Types, TypeScript, advanced type utilities, valueof, keyof, unionToIntersection, cast, noInfer, waitFor, defaultOnNullable',
+};
+
 export default () => {
   return <article>
     <h1>Advanced Type Utilities - Utils</h1>

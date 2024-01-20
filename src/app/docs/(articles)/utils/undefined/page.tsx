@@ -3,6 +3,12 @@ import { ArticleRecommendations } from '../../../../../components/Recomendations
 import { UtilArticle } from '../../../../../components/UtilArticle';
 import { eDefaultOnUndefined, eIsNull, eIsUndefined, eNonNull, eNonUndefined } from './examples';
 
+export const metadata = {
+  title: 'Type Utilities - Handling Null and Undefined',
+  description: 'Utilities for handling and transforming null and undefined types in TypeScript. Learn about functions like `isUndefined`, `isNull`, `nonUndefined`, `nonNull`, `defaultOnUndefined`, and more.',
+  keywords: 'Type utilities, TypeScript, null, undefined, type handling, isUndefined, isNull, nonUndefined, nonNull, defaultOnUndefined, type utilities description',
+};
+
 export default () => {
   return <article>
     <h1>Type Utilities - Handling Null and Undefined</h1>

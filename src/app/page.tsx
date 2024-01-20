@@ -1,6 +1,13 @@
 import { Button } from '../components/Button';
+import { Metadata } from 'next';
 
 import styles from './page.module.scss';
+
+export const metadata: Metadata = {
+  title: 'Readable Types - Make complex types easier!',
+  description: 'Readable Types help you to create complex types using out-of-the-box utils. Forget about creating most common utils that TypeScript developers use. The library includes the best utilities for testing TypeScript types!',
+  keywords: 'complex types, TypeScript, utility types, testing',
+};
 
 export default function () {
   return <main className={styles.main}>

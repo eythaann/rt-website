@@ -3,6 +3,12 @@ import { ArticleRecommendations } from '../../../../../components/Recomendations
 import { UtilArticle } from '../../../../../components/UtilArticle';
 import { eNewtype, eOpaque, eSoftOpaque } from './examples';
 
+export const metadata = {
+  title: 'Readable Types - Newtype & Opaque Types Utilities',
+  description: 'Explore utilities for creating distinct types with structural identity in TypeScript with Readable Types. Learn about functions like `newtype`, `Opaque`, and `Soft Opaque` to ensure type safety by preventing accidental mixing of similar types.',
+  keywords: 'Readable Types, TypeScript, newtype, opaque types, type safety, structural identity',
+};
+
 export default () => {
   return <article>
     <h1>Newtype & Opaque Types - Utils</h1>

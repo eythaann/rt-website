@@ -13,6 +13,12 @@ type A<T> = If<isString<T>, {
 type B = A<string> // B is number
 `;
 
+export const metadata = {
+  title: 'Readable Types - Getting Started',
+  description: 'Learn how to get started with Readable Types, a TypeScript utility library that makes type manipulations and computations more intuitive and easier to read. Follow the instructions for installation, usage, and explore examples to enhance your TypeScript projects.',
+  keywords: 'Readable Types, TypeScript, utility library, type manipulations, type computations, installation, usage, examples',
+};
+
 export default () => {
   return <article>
     <h1>Getting Started with Readable Types</h1>

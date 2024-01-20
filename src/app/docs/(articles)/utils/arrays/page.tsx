@@ -15,6 +15,12 @@ import {
   eUnionToTupleCombination,
 } from './examples';
 
+export const metadata = {
+  title: 'Readable Types - Array & Tuple Utils',
+  description: 'Explore utilities for working with arrays and tuples in TypeScript with Readable Types. Learn about functions like `isArray`, `isEmptyArray`, `isTuple`, `tupleIncludes`, `Tuple`, `Shift`, `Pop`, `ShiftRecursive`, `PopRecursive`, `UnionToTupleCombination`, `getIndexes`, and `ObjectToTuple` to enhance your array and tuple manipulations.',
+  keywords: 'Readable Types, TypeScript, array utilities, tuple utilities, isArray, isEmptyArray, isTuple, tupleIncludes, Tuple, Shift, Pop, ShiftRecursive, PopRecursive, UnionToTupleCombination, getIndexes, ObjectToTuple',
+};
+
 export default () => {
   return <article>
     <h1>Array & Tuple - Utils</h1>

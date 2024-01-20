@@ -1,5 +1,5 @@
 export default () => {
   return <article>
-    <h1>Strings</h1>
+    <h1>TODO</h1>
   </article>;
 };

@@ -11,6 +11,12 @@ const plugin = `
   }
 }`;
 
+export const metadata = {
+  title: 'Readable Types - Showing Errors in Your Editor',
+  description: 'Enhance your development experience with Readable Types by displaying test failures as errors directly in your code editor. Enable this feature by adding a specific plugin configuration to your tsconfig.json.',
+  keywords: 'Readable Types, TypeScript, code editor, error highlighting, development experience, tsconfig.json',
+};
+
 export default () => {
   return <article>
     <h1>Showing Errors in Your Editor</h1>

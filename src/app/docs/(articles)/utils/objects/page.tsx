@@ -21,6 +21,12 @@ import {
   eTupleToObject,
 } from './examples';
 
+export const metadata = {
+  title: 'Readable Types - Object Type Utilities',
+  description: 'Discover a set of utilities for manipulating and evaluating object types in TypeScript with Readable Types. Learn about functions like `isObject`, `isStrictObject`, `modify`, `modifyInterface`, `modifyByKey`, `prettify`, `pickByValue`, `canBeEmptyObject`, `getReadonlyKeys`, `getNoReadonlyKeys`, `getRequiredKeys`, `getOptionalKeys`, `hasProperty`, `someToReadonly`, `someToWritable`, `someToPartial`, `someToRequired`, and `TupleToObject` to enhance your object-related type manipulations.',
+  keywords: 'Readable Types, TypeScript, object utilities, object type manipulation, TypeScript utilities, type evaluation, object properties, Readonly, required, optional, TupleToObject',
+};
+
 export default () => {
   return <article>
     <h1>Object Type Utilities</h1>

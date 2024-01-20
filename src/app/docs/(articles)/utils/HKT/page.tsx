@@ -2,9 +2,15 @@ import { ArticleRecommendations } from '../../../../../components/Recomendations
 import { UtilArticle } from '../../../../../components/UtilArticle';
 import { eArgs, eBind, eCall } from './examples';
 
+export const metadata = {
+  title: 'Readable Types - HKT Utils',
+  description: 'Discover utilities for emulating function calls at the type level for High Kinded Types (HKTs) in TypeScript with Readable Types. Learn about functions like `call`, `args`, and `bind` to enable advanced type-level computations and transformations.',
+  keywords: 'Readable Types, TypeScript, HKT, Call, Args, Bind, type-level computations, type-level transformations',
+};
+
 export default () => {
   return <article>
-    <h1>Call & Args & Bind - Utils</h1>
+    <h1>Call & Args & Bind - HKT Utils</h1>
     <p>
       Utilities for emulating function calls at the type level for High Kinded Types (HKTs) in TypeScript.
       These utilities enable advanced type-level computations and transformations.

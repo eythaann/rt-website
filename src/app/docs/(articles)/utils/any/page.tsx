@@ -2,6 +2,12 @@ import { ArticleRecommendations } from '../../../../../components/Recomendations
 import { UtilArticle } from '../../../../../components/UtilArticle';
 import { eDefaultOnAny, eIsAny } from './examples';
 
+export const metadata = {
+  title: 'Readable Types - Any Type Utils',
+  description: 'Explore utilities for handling the `any` type in TypeScript with Readable Types. Learn about functions like `isAny` and `defaultOnAny` to streamline your code when working with the `any` type.',
+  keywords: 'Readable Types, TypeScript, any type, utility functions, isAny, defaultOnAny',
+};
+
 export default () => {
   return <article>
     <h1>Any Type - Utils</h1>

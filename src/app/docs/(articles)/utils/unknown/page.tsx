@@ -2,6 +2,12 @@ import { ArticleRecommendations } from '../../../../../components/Recomendations
 import { UtilArticle } from '../../../../../components/UtilArticle';
 import { eDefaultOnUnknown, eIsUnknown } from './examples';
 
+export const metadata = {
+  title: 'Type Utilities - Handling Unknown Types',
+  description: 'Utilities for handling and transforming \'unknown\' types in TypeScript. Explore functions like `isUnknown` and `defaultOnUnknown` to work with unknown types effectively.',
+  keywords: 'Type utilities, TypeScript, unknown type, type handling, isUnknown, defaultOnUnknown, type utilities description',
+};
+
 export default () => {
   return <article>
     <h1>Type Utilities - Handling Unknown Types</h1>

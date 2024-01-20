@@ -17,6 +17,12 @@ const tsconfig = `
   ],
 }`;
 
+export const metadata = {
+  title: 'Readable Types - Configuring with rt.config.ts',
+  description: 'Learn how to configure Readable Types by creating a rt.config.ts file in your project. Customize the behavior of the library using various options.',
+  keywords: 'Readable Types, TypeScript, configuration, rt.config.ts, tsconfig.json',
+};
+
 export default () => {
   return <article>
     <h1>Configuring Readable Types with <code>rt.config.ts</code></h1>

@@ -3,6 +3,12 @@ import { ArticleRecommendations } from '../../../../../components/Recomendations
 import { UtilArticle } from '../../../../../components/UtilArticle';
 import { eAnd, eIsBoolean, eIsFalse, eIsTrue, eNot, eOr, eXor } from './examples';
 
+export const metadata = {
+  title: 'Readable Types - Boolean Operations Utils',
+  description: 'Explore utilities for working with boolean types in TypeScript with Readable Types. Learn about functions like `isBoolean`, `isTrue`, `isFalse`, `And`, `Or`, `Xor`, and `not` to streamline your boolean operations.',
+  keywords: 'Readable Types, TypeScript, boolean utilities, isBoolean, isTrue, isFalse, And, Or, Xor, not',
+};
+
 export default () => {
   return <article>
     <h1>Boolean Operations - Utils</h1>

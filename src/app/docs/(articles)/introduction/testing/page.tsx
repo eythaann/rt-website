@@ -33,6 +33,12 @@ describeType('DefaultOnUnknown', () => {
   });
 });`;
 
+export const metadata = {
+  title: 'Readable Types - Testing with Readable Types',
+  description: 'Learn how to set up and run type tests using Readable Types Testing. Discover the benefits of type testing to ensure that your type manipulations work as expected, enhancing the reliability of your TypeScript code.',
+  keywords: 'Readable Types, TypeScript, testing, type tests, Readable Types Testing, Jest integration, writing type tests',
+};
+
 export default () => {
   return <article>
     <h1>Testing with Readable Types</h1>

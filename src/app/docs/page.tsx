@@ -1,5 +1,11 @@
 import { ArticleRecommendations } from '../../components/Recomendations';
 
+export const metadata = {
+  title: 'Readable Types - Introduction',
+  description: 'Welcome to Readable Types documentation! Learn what Readable Types is and how it simplifies the creation and management of complex TypeScript types.',
+  keywords: 'Readable Types, TypeScript, utility library, type definitions, documentation',
+};
+
 export default () => {
   return <>
     <article>

@@ -2,6 +2,12 @@ import { ArticleRecommendations } from '../../../../../components/Recomendations
 import { UtilArticle } from '../../../../../components/UtilArticle';
 import { eIsString, eJoin, eSplit, eSplitReverse, eStartsWith, eStringtify } from './examples';
 
+export const metadata = {
+  title: 'String & String Literals - Utils',
+  description: 'Utilities for manipulating or validating string types in TypeScript. Learn about functions like `isString`, `stringtify`, `join`, `split`, `startsWith`, and more.',
+  keywords: 'String utilities, TypeScript, string manipulation, string validation, isString, stringtify, join, split, startsWith, type utilities description',
+};
+
 export default () => {
   return <article>
     <h1>String & String Literals - Utils</h1>

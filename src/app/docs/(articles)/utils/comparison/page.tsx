@@ -3,6 +3,12 @@ import { ArticleRecommendations } from '../../../../../components/Recomendations
 import { UtilArticle } from '../../../../../components/UtilArticle';
 import { eEquals, eIsSubtype, eIsSupertype } from './examples';
 
+export const metadata = {
+  title: 'Readable Types - Type Comparison Utils',
+  description: 'Discover utilities for comparing types in TypeScript with Readable Types. Learn about functions like `equals`, `isSupertype`, and `isSubtype` to enhance your type comparison operations.',
+  keywords: 'Readable Types, TypeScript, type comparison, equals, isSupertype, isSubtype',
+};
+
 export default () => {
   return <article>
     <h1>Type Comparison - Utils</h1>

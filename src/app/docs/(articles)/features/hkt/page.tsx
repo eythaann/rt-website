@@ -15,6 +15,12 @@ type UsedAsCallback = TupleMap<[1, 2, 3], $example>;
 //   ^? ["1-SomeSufix", "2-SomeSufix", "3-SomeSufix"]
 `;
 
+export const metadata = {
+  title: 'Readable Types - Higher-Kinded Types (HKT) in TypeScript',
+  description: 'Explore the powerful concept of Higher-Kinded Types (HKT) in TypeScript with Readable Types. Learn how the library provides utilities to make working with HKT easy and intuitive.',
+  keywords: 'Readable Types, TypeScript, Higher-Kinded Types, HKT, generic types, abstraction, utilities',
+};
+
 export default () => {
   return <article>
     <h1>Higher-Kinded Types (HKT) in TypeScript</h1>

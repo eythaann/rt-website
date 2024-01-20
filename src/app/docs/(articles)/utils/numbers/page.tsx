@@ -2,6 +2,12 @@ import { ArticleRecommendations } from '../../../../../components/Recomendations
 import { UtilArticle } from '../../../../../components/UtilArticle';
 import { eIsNumber, eStrToNumber } from './examples';
 
+export const metadata = {
+  title: 'Readable Types - Number & Number Literals Utilities',
+  description: 'Discover utilities for manipulating or validating number types in TypeScript with Readable Types. Learn about functions like `isNumber` and `strToNumber` to streamline your number-related type manipulations.',
+  keywords: 'Readable Types, TypeScript, number utilities, number literals, isNumber, strToNumber',
+};
+
 export default () => {
   return <article>
     <h1>Number & Number Literals - Utils</h1>
