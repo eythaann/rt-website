@@ -6,6 +6,12 @@
     "articles": [
       {
         "kind": "article",
+        "title": "What it is?",
+        "route": "",
+        "main": true
+      },
+      {
+        "kind": "article",
         "title": "Getting Started",
         "route": "getting-started"
       },

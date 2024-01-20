@@ -1,7 +1,8 @@
 .codeContainer {
   position: relative;
-  margin: 10px 0;
-
+  border-radius: var(--config-border-radius);
+  overflow: hidden;
+  
   .copy {
     position: absolute;
     color: var(--secondary-color);
@@ -14,13 +15,14 @@
     cursor: pointer;
   }
 
-  code {
-    display: block;
-    border-radius: var(--config-border-radius);
-    padding: 20px;
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
+  .scroll {
     overflow-x: scroll;
-  }
+    background-color: var(--primary-color);
 
+    code {
+      display: block;
+      padding: 20px;
+      color: var(--secondary-color);
+    }
+  }
 }

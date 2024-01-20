@@ -13,20 +13,31 @@
   .nav>ul {
     display: flex;
     gap: 10px;
+    font-weight: 600;
 
-    .li:hover {
-      color: var(--color-cyan-600);
+    li:hover {
+      color: var(--color-cyan-900);
     }
 
-    .li {
+    li {
       &.active {
-        color: var(--color-cyan-500);
+        color: var(--color-cyan-600);
       }
     }
   }
-}
 
-.header > a {
-  font-size: 1.4em;
-  font-weight: 600;
+  > a {
+    font-size: 1.4em;
+    font-weight: 600;
+  }
+
+  .title {
+    white-space: nowrap;
+    font-weight: 700;
+    
+    > span {
+      font-weight: 900;
+      color: var(--color-orange-700);
+    }
+  }
 }

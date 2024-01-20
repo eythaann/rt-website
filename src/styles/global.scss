@@ -1,0 +1,90 @@
+@use './views.scss';
+
+:root {
+  --primary-color: var(--color-gray-900);
+  --secondary-color: var(--color-gray-50);
+
+  --main-typo: system-ui, Sans-Serif, Monospace;
+}
+
+::selection {
+  background-color: var(--color-gray-700);
+  color: var(--secondary-color);
+}
+
+body {
+  display: grid;
+  grid-template-columns: [startFullWidth] var(--config-content-margin) [startContent] 1fr [endContent] var(--config-content-margin) [endFullWidth];
+
+  @include views.desktop {
+    grid-template-columns: [startFullWidth] var(--config-content-margin) 220px [startContent] 1fr [endContent] var(--config-content-margin) [endFullWidth];
+  }
+
+  > * {
+    grid-column: startContent/endContent;
+  }
+
+  > header, footer {
+    grid-column: startFullWidth/endFullWidth;
+  }
+}
+
+p > a {
+  color: var(--color-blue-800)
+}
+
+p > code {
+  color: var(--secondary-color);
+  background-color: var(--color-gray-400);
+  padding: 3px 8px 2px;
+  border-radius: var(--config-border-radius);
+  white-space: nowrap;
+}
+
+h1 {
+  font-size: 2.4rem;
+  line-height: 1em;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+article {
+  pre {
+    margin-bottom: 1rem;
+  }
+
+  section {
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--color-gray-200);
+    }
+  }
+
+  img {
+    border-radius: var(--config-border-radius);
+    margin: 10px 0;
+  }
+}
+
+@media (prefers-contrast: high) {
+  :root {
+    --primary-color: var(--color-black);
+    --secondary-color: var(--color-white);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none;
+    transition: none;
+  }
+}

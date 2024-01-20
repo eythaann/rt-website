@@ -7,15 +7,11 @@ export default () => {
         TypeScript types. Whether you're a seasoned TypeScript developer or just getting started,
         our library is designed to streamline your workflow and make your code more readable and maintainable.
       </p>
-      <br />
-
       <p>
         Say goodbye to writing boilerplate type definitions and grappling with complex type manipulations.
         With Readable Types, you have access to a powerful set of out-of-the-box utilities that cover common
         use cases and challenges faced by TypeScript developers.
       </p>
-      <br />
-
     </article>
     <article>
       <h2>Testing with Readable Tests Types</h2>

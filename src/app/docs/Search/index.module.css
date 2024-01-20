@@ -9,7 +9,7 @@
   max-width: 600px;
   border-radius: var(--config-border-radius);
   height: 600px;
-  overflow-y: scroll;
+  overflow-y: auto;
   z-index: var(--z-modal);
 
   .mainTitle {

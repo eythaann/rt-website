@@ -1,12 +1,12 @@
 import { HeaderRoute } from './route';
 import Link from 'next/link';
 
-import styles from './index.module.css';
+import styles from './index.module.scss';
 
 export const Header = () => {
   return <header role="banner" className={styles.header}>
-    <Link href="/" aria-label="Homepage">
-      Readable Types
+    <Link className={styles.title} href="/" aria-label="Homepage">
+      $<span>{'<'}</span>Readable Types<span>{'>'}</span>
     </Link>
     <nav className={styles.nav} role="navigation" aria-label="Main navigation">
       <ul>

@@ -5,7 +5,7 @@ import { Header } from '../components/Header';
 
 import '../styles/variables.css';
 import '../styles/reset.css';
-import '../styles/global.css';
+import '../styles/global.scss';
 import 'highlight.js/styles/github-dark.css';
 
 interface Props {

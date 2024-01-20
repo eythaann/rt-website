@@ -1,9 +1,9 @@
 import { Button } from '../components/Button';
 
-import styles from './page.module.css';
+import styles from './page.module.scss';
 
 export default function () {
-  return <main>
+  return <main className={styles.main}>
     <section className={styles.mainSection}>
       <h1>Make complex types easier!</h1>
       <p>

@@ -1,17 +1,16 @@
 @use '/src/styles/views.scss';
 
 .content {
-  min-height: 100vh;
-  grid-column: 2/4;
-  width: 100%;
-  overflow: scroll;
+  min-height: 60svh;
+  overflow: hidden;
+  grid-column: startContent/endContent;
+  margin: 40px 0 12rem;
 
   @include views.desktop {
-    grid-column: 3/4;
-    padding-right: var(--config-content-margin);
+    padding-right: 5vw;
   }
-}
 
-.content p {
-  text-align: justify;
+  p {
+    text-align: justify;
+  }
 }

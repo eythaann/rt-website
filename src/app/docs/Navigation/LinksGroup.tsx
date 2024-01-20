@@ -8,13 +8,14 @@ import styles from './LinksGroup.module.scss';
 interface group {
   title: string;
   route: string;
-  articles: Array<group | article>;
+  articles: Array<article>;
 }
 
 interface article {
   title: string;
   route: string;
   active: boolean;
+  main?: boolean;
 }
 
 export const ArticleLinksGroup = ({ title, route, articles }: group) => {
@@ -27,10 +28,11 @@ export const ArticleLinksGroup = ({ title, route, articles }: group) => {
       {
         articles.map((article) => {
           return <LinkToArticle
-            active={pathname.includes(article.route)}
+            active={article.main ? pathname === '/docs' : pathname.includes(article.route)}
             key={article.route}
             route={route + '/' + article.route}
             title={article.title}
+            main={article.main}
           />;
         })
       }
@@ -38,10 +40,10 @@ export const ArticleLinksGroup = ({ title, route, articles }: group) => {
   </details>;
 };
 
-export const LinkToArticle = ({ title, route, active }: article) => {
+export const LinkToArticle = ({ title, route, active, main }: article) => {
   return <li className={cx(styles.link, {
     [styles.active]: active,
   })}>
-    <Link href={`/docs/${route}`}>{title}</Link>
+    <Link href={main ? '/docs' : `/docs/${route}`}>{title}</Link>
   </li>;
 };
